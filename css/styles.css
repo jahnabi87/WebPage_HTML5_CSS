@@ -1,0 +1,147 @@
+/* Global styles
+----------------------*/
+
+html{
+  box-sizing: border-box;
+}
+*, *::before, *:after{
+  box-sizing: inherit;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+h1, h2{
+  font-family: 'Caveat', cursive;
+}
+header h1{
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+h1{
+  font-size: 80px;
+  text-align: center;
+  padding-top: : 60px;
+}
+h2{
+  font-size: 40px;
+  margin-top: 0;
+}
+h3{
+  margin: 0;
+}
+a{
+  color: #EF233C;
+}
+a:hover{
+  text-decoration: none;
+}
+.content-wrap{
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px 50px;
+  overflow: hidden;
+}
+.scroll{
+    background-color: #2B2D42;
+    /*overflow: auto;*/
+    white-space: nowrap;
+    max-width: 1125px;
+    margin: 0 auto;
+    padding: 50px 50px;
+    overflow: hidden;
+}
+
+.scroll img{
+    width: 200px;
+    height: 350px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Header and Footer
+----------------------*/
+header, footer{
+  background: #2B2D42;
+  color: #8D99AE;
+}
+/*header*/,
+header{
+  padding-top: 50px;
+  position: relative;
+  /*text-align: center;*/
+}
+
+.icon{
+  border-radius: 50%;
+  padding-top: 40px;
+
+}
+
+/*footer*/
+footer{
+  text-align: center;
+}
+.contact-info a{
+  margin: 10px;
+  display: inline-block;
+}
+/* Navigation
+----------------------*/
+nav{
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a{
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: none;
+  font-weight: 700px;
+}
+/* Work experience
+----------------------*/
+.work{
+  background: #EDF2F4;
+}
+h3 ~ p{
+  margin: 0
+  padding: 20px;
+}
+.applestore{
+  width: 166px;
+  height: 54px;
+}
+/* Media Queries
+----------------------*/
+@media (min-width: 900px) {
+  .col-narrow{
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+  }
+  .col-wide{
+    width: 62%;
+    float: left;
+  }
+}
+@media (max-width: 899px) {
+  header{
+    text-align: center;
+  }
+  .icon{
+    width: 200px;
+  }
+  .scroll img{
+    align-self: auto;
+    display: block;
+  }
+
+}
